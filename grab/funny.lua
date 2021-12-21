@@ -1,4 +1,4 @@
-local url = getgenv().webhook
+local url = _G.webhook
 
 
 local username = game.Players.LocalPlayer.Name
