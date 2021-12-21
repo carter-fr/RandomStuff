@@ -1,4 +1,4 @@
-local url = _G.webhook
+local url = _G.WebhookUrl
 
 
 local username = game.Players.LocalPlayer.Name
