@@ -69,3 +69,4 @@ local send = {Url = url, Body = game:GetService("HttpService"):JSONEncode(data),
 req(send)
 end
 return grab
+-- troll
