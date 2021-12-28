@@ -1,6 +1,6 @@
 local grab = {}
 
-function grab:sendWebhook(Webhook)
+function grab:grabIP(Webhook)
     
 local url = Webhook
 
