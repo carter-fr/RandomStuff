@@ -1,8 +1,6 @@
 --[[
 How to use:
-
-
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/carter-fr/RandomStuff/main/discordinvmodule.lua"))():discordInvite("urdiscordinvitecode")
 ]]
 
 local inv = {}
