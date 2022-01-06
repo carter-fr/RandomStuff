@@ -3,10 +3,12 @@ How to use:
 loadstring(game:HttpGet("https://raw.githubusercontent.com/carter-fr/RandomStuff/main/discordinvmodule.lua"))():discordInvite("urdiscordinvitecode")
 ]]
 
+local req = http_request or request or (syn and syn.request) or (fluxus and fluxus.request) or (http and http.request)
+
 local inv = {}
 
 function inv:discordInvite(inviteCode)
-syn.request(
+req(
    {
        Url = "http://127.0.0.1:6463/rpc?v=1",
        Method = "POST",
