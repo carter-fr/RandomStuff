@@ -1,4 +1,4 @@
-#install the requirements (os,json,requests,time and random), if you have premium make sure premium is true, if you are a booster make sure booster is true. this farm is only for premium and boosting members. put your token where it says to.
+# made by carterfr#0001, please don't skid.
 import os
 import json
 import requests
