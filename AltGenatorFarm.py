@@ -1,22 +1,15 @@
-# made by carterfr#0001, please don't skid.
+# made by carterfr#0001, please don't skid. premium only.
 import os
 import json
 import requests
 import time
 import random
 
-premium = False
-
-booster = False
-
-genTypes = ['man','male','boy','woman','female','girl','babe','noob','bacon','short','tiny','small','long','large','huge','rare','exclusive','visor','pizelcat','haven','sazz','kalani']
+genTypes = ['man','male','boy','woman','female','girl','babe','noob','bacon','short','tiny','small','long','large','huge','rare','exclusive','visor','pizelcat','haven','sazz','kalani','lamp']
 
 genType = random.choice(genTypes)
 
-if premium == True:
     channelId = '964375808426770432'
-if booster == True:
-    channelId = '964375817482289163'
 
 header = {
     'authorization': "PUT TOKEN HERE"
