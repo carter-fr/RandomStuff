@@ -9,7 +9,7 @@ genTypes = ['man','male','boy','woman','female','girl','babe','noob','bacon','sh
 
 genType = random.choice(genTypes)
 
-    channelId = '964375808426770432'
+channelId = '964375808426770432'
 
 header = {
     'authorization': "PUT TOKEN HERE"
