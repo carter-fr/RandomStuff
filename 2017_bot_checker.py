@@ -1,12 +1,10 @@
-# Credit to carterfr#0001 for making this, Valox#0001 for minor help.
 import requests
 import json
 import datetime
 
 with requests.Session() as session:
-    account_info = '''
-Put User:Pass Combo Here (Make sure you make a valid.txt and an invalid.txt file in the same folder as this file!)
-'''
+    with open("accounts.txt", "r") as file:
+        account_info = file.read()
     account_info_array = account_info.replace(":", " ").split()
     username = account_info_array[0]
 
@@ -34,8 +32,8 @@ Put User:Pass Combo Here (Make sure you make a valid.txt and an invalid.txt file
 
 
     if days > '1095' and banned == False:
-        with open("valid.txt", "a") as file:
+        with open("valid.txt", "a+") as file:
             file.write(account_info + "\n")
     elif days < '1094' or banned == True:
-        with open("invalid.txt", "a") as file:
-            file.write(account_info + "\n")
+        with open("invalid.txt", "a+") as file:
+            file.write(account_info)
