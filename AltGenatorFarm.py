@@ -5,7 +5,7 @@ import requests
 import time
 import random
 
-genTypes = ['man','male','boy','stepbro','gigachad','woman','female','girl','stepsis','babe','noob','bacon','short','tiny','small','long','large','huge','rare','exclusive','visor','pizelcat','haven','sazz','kalani','lamp']
+genTypes = ['man','male','boy','stepbro','stepgrandpa','gigachad','woman','female','girl','stepsis','stepgrandma','babe','noob','bacon','short','tiny','small','long','large','huge','rare','exclusive','visor','pizelcat','haven','sazz','kalani','lamp']
 
 genType = random.choice(genTypes)
 
